@@ -1,0 +1,26 @@
+{
+  "name": "ring-a-ling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RussWard/ring-a-ling.git"
+  },
+  "author": "Russ Ward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RussWard/ring-a-ling/issues"
+  },
+  "homepage": "https://github.com/RussWard/ring-a-ling#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}

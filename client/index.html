@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" >
+    <script type="text/javascript" src="./clockLogic.js"></script>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="display">
+        <span class="digit" id="hour">12</span>
+        <span class="digit">:</span>
+        <span class="digit" id="minute">00</span>
+        <span class="digit">:</span>
+        <span class="digit" id="second">00</span>
+      </div>
+      <div class="set-clock">
+        <input type="time" name="clock-time" id="clock-time">
+        <button onclick="clock.setTime(document.getElementById('clock-time').value)">Run Clock</button>
+        <p>you may input time manually, or leave blank to set to current time</p>
+      </div>
+      <div class="alarm">
+        <div class="alarm-set">
+          <input type="time" name="alarm-time" id="alarm-time">
+          <button onclick="clock.setAlarm(document.getElementById('alarm-time').value)">Set alarm</button>
+        <audio id="alarm-sound" src="http://www.soundjay.com/button/beep-05.wav" autoplay="false"></audio>
+      </div>
+    </div>
+  </body>
+</html>
